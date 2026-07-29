@@ -1,0 +1,16 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (claves, tokens, contraseñas)
+.env
+.env.local
+
+# Archivos de la base de datos local (si usan SQLite o logs)
+*.sqlite
+*.log
+
+# Archivos del sistema operativo o del editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
