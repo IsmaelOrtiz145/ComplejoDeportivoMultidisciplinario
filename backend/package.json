@@ -1,0 +1,17 @@
+{
+  "name": "complejo-deportivo-multidisciplinario",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ismael Ortiz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsmaelOrtiz145/ComplejoDeportivoMultidisciplinario.git",
+    "directory": "backend"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

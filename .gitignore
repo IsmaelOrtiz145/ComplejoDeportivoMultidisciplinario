@@ -1,15 +1,20 @@
-# Dependencias
-node_modules/
+# Dependencias en cualquier subcarpeta (backend/node_modules, frontend/node_modules, etc.)
+**/node_modules/
 
-# Variables de entorno (claves, tokens, contraseñas)
-.env
-.env.local
+# Variables de entorno en cualquier carpeta
+**/.env
+**/.env.*
+!.env.example
 
-# Archivos de la base de datos local (si usan SQLite o logs)
+# Archivos de build / salida
+**/dist/
+**/build/
+
+# Archivos de la base de datos local y logs
 *.sqlite
 *.log
 
-# Archivos del sistema operativo o del editor
+# Archivos del sistema operativo y VS Code
 .DS_Store
 Thumbs.db
 .vscode/
