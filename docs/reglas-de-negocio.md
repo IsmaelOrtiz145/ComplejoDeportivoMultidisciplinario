@@ -42,3 +42,27 @@ El beneficio del estacionamiento gratuito se activa hasta 30 minutos antes del i
 ### Descripcion
 
 Para poder realizar una reserva, es necesario que el usuario se encuentre logueado dentro de la pagina.
+
+## RN-008 Propietario de la reserva
+
+### Descripcion
+
+La reserva quedara a nombre del cliente que se encuentre logueado al momento de la confirmacion
+
+## RN-009 Tiempo limite de cancelacion
+
+### Descripcion
+
+Solo se podra cancelar una reserva 24 horas antes de iniciado el turno, pasado esas 24 horas se cobrara el 50% del valor inicial
+
+## RN-010 Maximas reservas disponibles
+
+### Descripcion
+
+Un cliente solo puede tener un máximo de 3 reservas activas en total en el sistema al mismo tiempo.
+
+## RN-011 Tolerancia de cancelacion para una reserva
+
+### Descripcion
+
+Los socios anuales tendran una tolerancia de 2 cancelacion al año sin costo adicional, cuando la reserva este a menos de 24 horas de iniciar su turno.

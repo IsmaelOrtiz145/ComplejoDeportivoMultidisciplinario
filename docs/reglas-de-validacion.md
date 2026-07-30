@@ -77,3 +77,43 @@ Para poder confirmar la reserva, el sistema validara que el usuario este loguead
 #### Validacion
 
 - Al momento de confirmar una reserva, el sistema verificara que se encuentre un usuario logueado, si lo encuentra, confirmara la reserva (sujeto a la regla de negocio de maximas reservas disponibles), caso contrario, lo mandara a la pagina de logueo.
+
+## RN-008 Propietario de la reserva
+
+### Condicion
+
+Para guardar los datos de la reserva, el sistema debera tomar el id de cliente para asociarla a la misma
+
+#### Validacion
+
+- Cuando el usuario confirma la reserva y este se encuentre logueado (se cumple correctamente las RN-007 y la regla de negocio de las tres reservas), el sistema debera tomar el id del usuario logueado y registrarlo en la misma.
+
+## RN-009 Tiempo limite de cancelacion
+
+### Condicion
+
+El sistema debera controlar las horas restantes para el turno que se desee cancelar y en base a eso se aplicara o no una multa del 50% del valor.
+
+#### Validacion
+
+- Cuando el usuario desea dar de baja un turno y este lo confirma, el sistema debera controlar a que hora y dia estaba reservado ese turno y lo comparara con la hora actual del sistema, si faltan mas de 24 horas, no se aplicara ninguna sancion, caso contrario, se aplicara un recargo del 50% del valor de la reserva para la siguiente cuota que deba abonar
+
+## RN-010 Maximas reservas disponibles
+
+### Condicion
+
+El sistema debera validar que al momento de confirmar una reserva, el usuario que lo solicite no deba superar dos reservas activas al momento
+
+#### Validacion
+
+- Cuando el usuario confirme la reserva, el sistema buscara la cantidad de reservas con estado ***RESERVADO***, y si el numero es menor a 3, se confirmara la reserva, caso contrario, no se podra realizar la reserva
+
+## RN-011 Tolerancia de cancelacion para una reserva
+
+### Condicion
+
+Cuando el usuario cancele una reserva en menos de 24 horas para que se inicie, el sistema validara si tiene tolerancias disponibles y en base a eso se aplicara o no la multa
+
+#### Validacion
+
+- Al momento de registrarse una cancelacion a menos de 24 horas de la reserva, el sistema verificara cual es el plan que dispone el usuario (y este es el plan anual), seguidamente, controlara si posee alguna tolerancia disponible (tolerancia > 0), en caso de poseerlo descontara en 1 la tolerancia disponible y no se sumara el costo adicional por cancelacion a la cuota del socio. Si no posee tolerancia, el sistema calculara el 50% del costo y lo sumara a la couta del socio que haya realizado la reserva.
