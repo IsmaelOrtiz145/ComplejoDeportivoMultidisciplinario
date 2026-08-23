@@ -311,3 +311,45 @@ Esta situación puede generar un recargo por reparación o reposición de acuerd
 El item todavía no fue devuelto por el cliente.
 
 ---
+
+## 12. Roles del Sistema
+
+El sistema contará con tres roles principales: CLIENTE, OPERADOR y ADMINISTRADOR.
+
+### CLIENTE
+
+Usuario que utiliza el complejo y gestiona sus propias operaciones dentro del sistema.
+
+**Permisos principales:**
+
+- Registrarse.
+- Loguearse.
+- Controlar y gestionar su perfil.
+- Consultar y gestionar su membresía.
+- Crear reservas.
+- Gestionar sus propias reservas.
+- Consultar su historial de reservas.
+
+### OPERADOR
+
+Usuario encargado de realizar las operaciones relacionadas con la atención y gestión diaria del complejo.
+
+**Permisos principales:**
+
+- Realizar el check-in de las reservas.
+- Gestionar préstamos de equipamiento.
+- Registrar ingresos y egresos del estacionamiento.
+- Acceder al calendario de reservas.
+- Consultar perfiles de usuarios.
+
+### ADMINISTRADOR
+
+Usuario encargado de la administración general y configuración del sistema.
+
+**Permisos principales:**
+
+- Realizar operaciones CRUD sobre las entidades del sistema.
+- Gestionar roles.
+- Configurar planes.
+- Configurar precios.
+- Cambiar los estados de los usuarios.
