@@ -53,7 +53,7 @@ La reserva quedara a nombre del cliente que se encuentre logueado al momento de 
 
 ### Descripcion
 
-Solo se podra cancelar una reserva 24 horas antes de iniciado el turno, pasado esas 24 horas se cobrara el 50% del valor inicial
+Si el cliente cancela una reserva dentro de las ultimas 24 horas para el inicio de la misma, se procedera a cobrar el 50% del valor inicial de esta, caso contrario, no se cobrara.
 
 ## RN-010 Maximas reservas disponibles
 
